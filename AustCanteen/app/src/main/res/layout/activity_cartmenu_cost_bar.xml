@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignBottom="@+id/recyclerView"
+    android:layout_alignParentBottom="true"
+    android:background="#129b00"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/totalTextTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:padding="8dp"
+        android:layout_marginTop="3dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:fontFamily="@font/duracellio" />
+    <TextView
+        android:id="@+id/totalFinalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/totalTextTV"
+        android:padding="8dp"
+        android:layout_marginTop="3dp"
+        android:text="0 Taka"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:fontFamily="@font/duracellio"/>
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/buttonstyle"
+        android:fontFamily="@font/duracellio"
+        android:layout_margin="3dp"
+        android:text="Confirm!!"/>
+</RelativeLayout>

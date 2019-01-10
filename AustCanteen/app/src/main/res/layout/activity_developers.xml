@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.austcanteen.Developers"
+    android:background="@drawable/itembackground">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/developedByText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed By"
+        android:fontFamily="@font/duracellio"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#ffee00"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/developedByText"
+        android:text="Sifat Ul Alam Nabil\n\n ID:16.01.04.041\n\n Saiful Islam Sonnet\n\n ID:16.01.04.040"
+        android:fontFamily="@font/duracellio"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffee00"/>
+
+
+</RelativeLayout>

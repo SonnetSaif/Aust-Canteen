@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.austcanteen.ComplaintBox"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/complaintHeadingTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Describe Your Problem"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:fontFamily="@font/duracellio"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:id="@+id/complaintSubjectET"
+            android:layout_below="@+id/complaintHeadingTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Subject"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittextbackground"
+            android:padding="15dp"
+            android:textCursorDrawable="@null"
+            android:maxLength="35"/>
+
+        <EditText
+            android:id="@+id/complaintDescET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/complaintSubjectET"
+            android:layout_below="@+id/complaintSubjectET"
+            android:background="@drawable/edittextbackground"
+            android:gravity="top"
+            android:hint="Describe your Problem"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp" />
+        <Button
+            android:id="@+id/complaintSubmitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignBottom="@+id/complaintDescET"
+            android:gravity="center_horizontal"
+            android:text="Submit"
+            android:background="@drawable/buttonstyle"
+            android:padding="17dp"
+            android:fontFamily="@font/duracellio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

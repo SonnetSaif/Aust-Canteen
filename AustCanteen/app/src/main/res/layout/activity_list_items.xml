@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/imageIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/duracellio"
+                    android:text="Food Name "
+                    android:textColor="#12fa0e"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:background="#4F0e0d0e"
+                    android:layout_margin="2dp"/>
+
+                <TextView
+                    android:id="@+id/priceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/duracellio"
+                    android:text="Price"
+                    android:textColor="#12fa0e"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:background="#4F0e0d0e"
+                    android:layout_margin="2dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingRB"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="false"
+                    android:background="#4F0e0d0e"
+                    android:layout_margin="2dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/availableTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/duracellio"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

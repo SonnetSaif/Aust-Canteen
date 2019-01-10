@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.austcanteen.ConfirmOrder"
+    android:background="@drawable/itembackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/orderDetailsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/duracellio"
+        android:text="Your Order Details"
+        android:textColor="#ffee00"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/thanksText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/duracellio"
+        android:text="Thanks for Purchasing!!"
+        android:textColor="#ffee00"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_margin="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/orderNumberTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/duracellio"
+            android:text="Order Number: "
+            android:textColor="#ffee00"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/orderTextTV"
+            android:textColor="#ffee00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/orderNumberTV"
+            android:fontFamily="@font/duracellio"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/paidStatusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderNumberTV"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/duracellio"
+            android:text="Paid: "
+            android:textColor="#ffee00"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/paidTextTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderNumberTV"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/paidStatusTV"
+            android:textColor="#ffee00"
+            android:fontFamily="@font/duracellio"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+
+            android:id="@+id/receivedStatusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paidStatusTV"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/duracellio"
+            android:text="Received: "
+            android:textColor="#ffee00"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/receivedTextTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paidStatusTV"
+            android:layout_toRightOf="@+id/receivedStatusTV"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/duracellio"
+            android:textColor="#ffee00"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+
+            android:id="@+id/displayTotalCostTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receivedStatusTV"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/duracellio"
+            android:text="Total: "
+            android:textColor="#ffee00"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receivedStatusTV"
+            android:layout_toRightOf="@+id/displayTotalCostTV"
+            android:id="@+id/totalTextTV"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/duracellio"
+            android:textColor="#ffee00"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <Button
+            android:id="@+id/saveOrderBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayTotalCostTV"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle"
+            android:fontFamily="@font/duracellio"
+            android:padding="10dp"
+            android:text="Save Order" />
+
+        <Button
+            android:id="@+id/completeOrderBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayTotalCostTV"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/saveOrderBtn"
+            android:background="@drawable/buttonstyle"
+            android:fontFamily="@font/duracellio"
+            android:padding="10dp"
+            android:text="Complete Order" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

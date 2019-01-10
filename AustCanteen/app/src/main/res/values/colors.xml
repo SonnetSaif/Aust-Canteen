@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#16acd6</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#558B2F</color>
+    <color name="borderColor">#e1d6d6</color>
+    <color name="mainMenuItemColor">#d7771d</color>
+    <color name="available">#06830c</color>
+    <color name="notAvailable">#be0609</color>
+
+</resources>
