@@ -7,3 +7,8 @@ A user can easily order any available food items he/she wants by a unique automa
 for at the very right moment of purchasing or save his/her order for latter purchasing. 
 Moreover, user can rate any food items according to the quality of the foods and 
 complain about any things regarding canteen and food items in the ‘Complaint Box’ anonymously.
+
+
+‘AUST Canteen’ app is designed in a way to improve the overall canteen system in a large scale.
+Several possible future works can be done such as virtual currency, payment through mobile or 
+online financial service, more user-friendly interface etc.
